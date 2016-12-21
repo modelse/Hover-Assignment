@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="hover.css">
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function (){
+            $('img').hover(function(){
+                var curImg= $(this).attr("src");
+                var nxtImg= $(this).attr("data-alt-src");
+                $(this).attr("src", nxtImg);
+                $(this).attr("data-alt-src", curImg);
+            })
+        });
+        </script>
+    </head>
+    <body>
+    <h1>Hover In/Out</h1>
+        <img src='englishBulldog.jpg' data-alt-src='bulldogButt.jpg' />
+        <img src='englishBulldog.jpg' data-alt-src='bulldogButt.jpg' />
+        <img src='englishBulldog.jpg' data-alt-src='bulldogButt.jpg' />
+        <img src='englishBulldog.jpg' data-alt-src='bulldogButt.jpg' />
+        <img src='englishBulldog.jpg' data-alt-src='bulldogButt.jpg' />
+        <img src='englishBulldog.jpg' data-alt-src='bulldogButt.jpg' />
+        <img src='englishBulldog.jpg' data-alt-src='bulldogButt.jpg' />
+        <img src='englishBulldog.jpg' data-alt-src='bulldogButt.jpg' />
+    </body>
+</html>
